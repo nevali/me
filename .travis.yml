@@ -1,0 +1,8 @@
+language: php
+dist: trusty
+sudo: required
+script: bash deploy/travis-build.sh
+env:
+  global:
+  - ENCRYPTION_LABEL: "a2a6c6aaee56"
+  - COMMIT_AUTHOR_EMAIL: "mo@neva.li"

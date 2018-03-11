@@ -1,0 +1,26 @@
+<?php
+
+header('Content-Type: text/html; charset=utf-8');
+
+?><!DOCTYPE html>
+<html>
+	<head>
+		<meta charset="utf-8">
+		<title>Mo McRoberts | <?php e($page->title); ?></title>
+		<link rel="stylesheet" href="<?php css('styles.css'); ?>" type="text/css">
+		<link rel="stylesheet" href="<?php css('print.css'); ?>" type="text/css" media="print">
+        <link rel="stylesheet" href="<?php staticres('font-awesome-4.6.3/css/font-awesome.min.css'); ?>" type="text/css">
+<?php
+if(strlen($page->canonical))
+{
+    echo "\t\t" . '<link rel="canonical" href="' . _e(BASE_URI . $page->canonical ) . '">' . "\n";
+}
+?>
+		<link href="https://fonts.googleapis.com/css?family=Assistant:300" rel="stylesheet">
+	 	<meta name="viewport" content="width=device-width,initial-scale=1">
+	</head>
+	<body>
+		<header>
+			<h1><a href="<?php e(BASE_URI . '/'); ?>">Mo McRoberts</a></h1>
+			<h2>Music • Broadcasting • Technology</h2>
+		</header>

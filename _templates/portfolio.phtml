@@ -1,0 +1,36 @@
+<?php emit('_head'); ?>
+		<main>
+			<div id="frontmatter">
+				<section id="profile">
+<?php
+if($page->internal)
+{
+	emit('_profile-internal');
+}
+else
+{
+	emit('_profile');
+}
+?>
+				</section>
+			</div>
+			<section id="contact">
+<?php emit('_contact'); ?>
+			</section>
+			<section id="projects">
+<?php emit('_projects'); ?>
+			</section>
+			<section id="publications">
+<?php emit('_publications'); ?>
+			</section>
+			<section id="experience">
+<?php emit('_experience'); ?>
+			</section>
+			<section id="interests">
+<?php emit('_interests'); ?>
+			</section>
+			<section id="references">
+<?php emit('_references'); ?>
+			</section>
+		</main>
+<?php emit('_foot');
